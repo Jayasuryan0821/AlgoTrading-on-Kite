@@ -8,12 +8,11 @@ import os
 import time
 from time import sleep 
 from pyotp import TOTP
+import pyotp
 import base64
 import binascii
 from datetime import datetime
 from urllib.parse import urlparse,parse_qs
-
-folder_name = 'api_keys'
 
 
 def get_curr_path(folder_name):
@@ -23,8 +22,6 @@ def get_curr_path(folder_name):
 
 # curr_path = get_curr_path(curr_dir,folder_name)
 # print(curr_path)
-
-file_name = 'credentials.txt'
 
 def get_credentials(curr_path,file_name):
     file_dir = os.path.join(curr_path,file_name)
@@ -78,23 +75,32 @@ def auto_login(api_key,user_name,pwd,totp_key):
     with open('request_token.txt', 'w') as f:
         f.write(request_token)
     # print(r)
-    request_token = open('request_token','r').read().split()
+    request_token = open('request_token.txt','r').read().split()
     driver.quit()
     return request_token
     
-
-    
-# request_token = auto_login(api_key,api_secret,user_name,pwd,totp_key)
+# auto_login(api_key,api_secret,user_name,pwd,totp_key)
 
 def generate_access_token(request_token,api_key,api_secret):
+    request_token = open('request_token.txt','r').read()
     kite = KiteConnect(api_key=api_key)
     data = kite.generate_session(request_token=request_token,api_secret=api_secret)
     data
     with open('access_token.txt','w') as f:
         f.write(data['access_token'])
-    access_token = open('access_token','r').read().split()
+    access_token = open('access_token.txt','r').read().split()
     return access_token
 
-# access_token = generate_access_token(request_token,api_key,api_secret)
+folder_name = 'api_keys'
+curr_dir = get_curr_path(folder_name)
+print(curr_dir)
 
-    
+file_name = 'credentials.txt'
+api_key,api_secret,user_name,pwd,totp_key = get_credentials(curr_dir,file_name)
+print(api_key,api_secret,user_name,pwd,totp_key)
+
+request_token = auto_login(api_key,user_name,pwd,totp_key)
+print(request_token)
+
+access_token = generate_access_token(request_token,api_key,api_secret)
+print(access_token)
