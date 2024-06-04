@@ -75,7 +75,7 @@ def auto_login(api_key,user_name,pwd,totp_key):
     with open('request_token.txt', 'w') as f:
         f.write(request_token)
     # print(r)
-    request_token = open('request_token.txt','r').read().split()
+    request_token = open('request_token.txt','r').read()
     driver.quit()
     return request_token
     
@@ -88,7 +88,7 @@ def generate_access_token(request_token,api_key,api_secret):
     data
     with open('access_token.txt','w') as f:
         f.write(data['access_token'])
-    access_token = open('access_token.txt','r').read().split()
+    access_token = open('access_token.txt','r').read()
     return access_token
 
 folder_name = 'api_keys'
