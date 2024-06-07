@@ -1,6 +1,6 @@
 import pandas as pd 
 import numpy as np
-
+from stocktrends import Renko
 
 def compute_bollinger_bands(df,n):
     df['sma'] = df['close'].rolling(window=20).mean()
@@ -101,3 +101,12 @@ def compute_super_trend(df,n,multiplier):
                 df.loc[df.index[i], 'super_trend'] = df.loc[df.index[i], 'ub']
 
     return df
+
+
+def convert_to_renko(df,brick_size):
+    df = df.copy()
+    df.reset_index(inplace=True)
+    renko_df = Renko(df)
+    renko_df.brick_size = brick_size
+    renko_df = renko_df.get_ohlc_data()
+    return renko_df
