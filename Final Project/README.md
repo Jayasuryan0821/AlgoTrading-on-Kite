@@ -28,7 +28,7 @@ This repository contains a Jupyter Notebook that implements a comprehensive trad
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Jayasuryan0821/AlgoTrading-on-Kite.git
-   cd trading-strategy
+   cd Final Project
    ```
 
 2. **Install the required packages**:
