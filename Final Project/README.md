@@ -1,8 +1,7 @@
 
-# Trading Strategy Analysis
+# Trading Strategy Analytics
 
-This repository contains a Jupyter Notebook that implements a comprehensive trading strategy using various technical indicators and machine learning models. The primary focus is on optimizing trade execution and maximizing profits through algorithmic trading techniques.
-
+This project focuses on designing and implementing an algo-trading strategy using price-action concepts and support-resistance levels.
 ## Features
 
 1. **Price Action Concepts**:
