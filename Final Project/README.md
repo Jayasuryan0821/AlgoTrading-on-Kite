@@ -28,7 +28,7 @@ This repository contains a Jupyter Notebook that implements a comprehensive trad
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/trading-strategy.git
+   git clone https://github.com/Jayasuryan0821/trading-strategy.git
    cd trading-strategy
    ```
 
@@ -57,14 +57,3 @@ The notebook provides detailed logs and visualizations for each step, including:
 - Profit and loss calculations for each trade
 - Model accuracy and performance metrics
 
-## Contributing
-
-Contributions are welcome! Please create an issue or pull request for any feature requests, bug fixes, or improvements.
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-For any questions or inquiries, please reach out via GitHub issues or contact me at your.email@example.com.
