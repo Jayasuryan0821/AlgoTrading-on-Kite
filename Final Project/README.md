@@ -12,8 +12,8 @@ This repository contains a Jupyter Notebook that implements a comprehensive trad
    - Support and Resistance Levels
 
 2. **Trading Strategy**:
-   - Buy Signal: When RSI < 30, MACD > MACD signal, Short SMA > Long SMA
-   - Sell Signal: When RSI > 70, or when it hits target profit or stop loss
+   - Buy Signal: Check for bullish engulfing or hammer candles near by the support lines  
+   - Sell Signal: Check for bearish engulfing or shooting star candles near by the resistance lines 
    - Trailing Stop Loss and Profit Targets for risk management
 
 3. **Machine Learning**:
@@ -28,7 +28,7 @@ This repository contains a Jupyter Notebook that implements a comprehensive trad
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Jayasuryan0821/trading-strategy.git
+   git clone https://github.com/Jayasuryan0821/AlgoTrading-on-Kite.git
    cd trading-strategy
    ```
 
