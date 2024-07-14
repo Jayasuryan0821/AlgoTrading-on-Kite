@@ -1,0 +1,14 @@
+kiteconnect
+selenium
+webdriver_manager
+pyotp
+pandas
+numpy
+seaborn
+matplotlib
+plotly
+mplfinance
+torch
+backtesting
+scikit-learn
+smtplib
