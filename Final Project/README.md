@@ -1,7 +1,8 @@
 
 # Trading Strategy Analytics
 
-This project focuses on designing and implementing an algo-trading strategy using price-action concepts and support-resistance levels.
+This project focuses on designing and implementing an algo-trading strategy using price-action concepts and support-resistance levels. The primary focus is on optimizing trade execution and maximizing profits through algorithmic trading techniques.
+
 ## Features
 
 1. **Price Action Concepts**:
@@ -14,11 +15,8 @@ This project focuses on designing and implementing an algo-trading strategy usin
    - Sell Signal: Check for bearish engulfing or shooting star candles near by the resistance lines 
    - Trailing Stop Loss and Profit Targets for risk management
 
-3. **Machine Learning**:
-   - LSTM Model for predictive analysis
-   - Hyperparameter tuning for optimal model performance
 
-4. **Data Handling**:
+3. **Data Handling**:
    - Web scraping for real-time financial data
    - Integration with brokerage firm APIs for automated trade execution
 
