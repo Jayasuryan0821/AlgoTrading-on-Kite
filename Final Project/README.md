@@ -5,11 +5,10 @@ This repository contains a Jupyter Notebook that implements a comprehensive trad
 
 ## Features
 
-1. **Technical Indicators**:
-   - Moving Averages (Short SMA, Long SMA)
-   - Relative Strength Index (RSI)
-   - Moving Average Convergence Divergence (MACD)
+1. **Price Action Concepts**:
    - Support and Resistance Levels
+   - Bullish engulfing and hammer candlesticks 
+   - Bearish engulfing and shooting star candlesticks
 
 2. **Trading Strategy**:
    - Buy Signal: Check for bullish engulfing or hammer candles near by the support lines  
